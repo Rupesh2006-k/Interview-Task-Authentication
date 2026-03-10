@@ -28,12 +28,10 @@ const Register = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-neutral-900 p-4">
-
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="bg-white w-full max-w-md rounded-2xl shadow-2xl border border-gray-200"
       >
-
         {/* Header */}
         <div className="bg-black text-white p-6 rounded-t-2xl">
           <h2 className="text-2xl font-bold text-center tracking-wide">
@@ -43,7 +41,6 @@ const Register = () => {
 
         {/* Form */}
         <div className="p-8 space-y-5">
-
           <div>
             <label className="block text-sm font-medium text-gray-600 mb-1">
               Name
@@ -118,7 +115,6 @@ const Register = () => {
               Login
             </Link>
           </p>
-
         </div>
       </form>
     </div>

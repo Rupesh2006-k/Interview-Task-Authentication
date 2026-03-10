@@ -29,12 +29,10 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-neutral-900 p-4">
-
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="bg-white w-full max-w-md rounded-2xl shadow-2xl border border-gray-200"
       >
-
         {/* Header */}
         <div className="bg-black text-white p-6 rounded-t-2xl">
           <h2 className="text-2xl font-bold tracking-wide text-center">
@@ -44,7 +42,6 @@ const Login = () => {
 
         {/* Form */}
         <div className="p-8 space-y-5">
-
           <div>
             <input
               type="email"
@@ -93,7 +90,6 @@ const Login = () => {
               Register
             </Link>
           </p>
-
         </div>
       </form>
     </div>
