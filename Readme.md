@@ -8,6 +8,7 @@ It includes **User Registration, Login, Logout, and Profile APIs**.
 # 🚀 Features
 
 * User Registration
+* email verification
 * User Login
 * JWT Authentication
 * Protected Profile Route
@@ -18,6 +19,9 @@ It includes **User Registration, Login, Logout, and Profile APIs**.
 
 # 🛠 Tech Stack
 
+* **Tenstack query**
+* **Tailwindcss**
+* **React.js**
 * **Node.js**
 * **Express.js**
 * **MongoDB**
@@ -156,7 +160,8 @@ Authorization: Bearer <token>
 
 # 🔐 Authentication Flow
 
-1. User registers using **/register**
+0. User registers using **/register**
+1. User verify email
 2. User logs in using **/login**
 3. Server returns **JWT Token**
 4. Token is stored on frontend
@@ -164,32 +169,38 @@ Authorization: Bearer <token>
 
 ---
 
+
+```
 # 📁 Project Structure
 
 ```
-project
+
+```
+backend
 │
-├── config
-│   └── db.js
+├── node_modules
 │
-├── controllers
-│   └── authController.js
+├── src
+│   │
+│   ├── config        # Application configuration (env, constants, etc.)
+│   ├── controllers   # Handles request & response logic
+│   ├── db            # Database connection setup
+│   ├── middleware    # Custom middleware (auth, error handling)
+│   ├── models        # Mongoose models (User, etc.)
+│   ├── routes        # API route definitions
+│   ├── services      # Business logic layer
+│   ├── utils         # Helper functions & utilities
+│   │
+│   └── app.js        # Express app configuration
 │
-├── middleware
-│   └── authMiddleware.js
-│
-├── models
-│   └── userModel.js
-│
-├── routes
-│   └── authRoutes.js
-│
-├── .env
-├── server.js
-└── package.json
+├── .env              # Environment variables
+├── package.json      # Project dependencies & scripts
+├── package-lock.json # Dependency lock file
+└── server.js         # Server entry point
 ```
 
----
+```
+
 
 # 👨‍💻 Author
 
